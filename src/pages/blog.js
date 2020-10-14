@@ -7,7 +7,7 @@ import SEO from "../components/seo";
 const Blog = () => {
   const data = JSON.parse(localStorage.getItem('myData'));
   const [arrDetail, setArrDetail] = useState(data);
-  const [arrSearch, setArrSearch] = useState(data);
+  const [arrSearch] = useState(data);
   const category = [{id : '0', name: 'Thể thao'}, {id : '1', name: 'Giáo dục'}, {id : '2', name: 'Xã hội'}, {id : '3', name: "Sức khỏe"}, {id : '4', name: 'Thời tiết'}, {id : '5', name: 'Du lịch - Văn hóa'}];
 
   //Search theo danh mục
